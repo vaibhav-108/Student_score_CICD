@@ -23,8 +23,9 @@ class CustomException(Exception):
 if __name__ =="__main__":
     logging.info('run exception')
     try:
-        a=10/0
         logging.info('Division by zero')
+        a=10/0
+        
         
     except Exception as e:
         raise CustomException(e,sys)
